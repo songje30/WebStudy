@@ -94,7 +94,16 @@
                   <input type="text" id="recommender">
                 </p>
               </fieldset>
-              <select name="city" id="city" multiple size="10">
+              <fieldset>
+                <legend>좋아하는 과일</legend>
+                <input type="checkbox" id="banana" name="banana" value="banana">
+                <label for="banana">banana</label><br>
+                <input type="checkbox" id="apple" name="apple" value="apple">
+                <label for="apple">apple</label><br>
+                <input type="checkbox" id="orange" name="orange" value="orange">
+                <label for="orange">orange</label><br>
+              </fieldset>
+              <select name="city" id="city">
                 <optgroup label="서울시">
                   <option value="강북구">강북구</option>
                   <option value="강남구">강남구</option>
@@ -114,5 +123,69 @@
             <input type="reset"value="양식 초기화">
         </form>
     </div>
-    </body>
+    <!-- <table style="border: 1px solid red; text-align: center;">
+      <caption>마실거</caption>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1,000원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+      </tr>
+      <tr>
+        <td>총 금액</td>
+        <td colspan="3">6500원</td>
+      </tr>   
+    </table> -->
+    <div style="width: 600px; height: 200px; text-align: center;">
+    <table width="500px" border="2" cellspacing="3">
+      <tr>
+        <th>순번</th>
+        <th>품명</th>
+        <th>단가</th>
+        <th>수량</th>
+        <th>비고</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>새우깡</td>
+        <td>1,300</td>
+        <td>3</td>
+        <td rowspan="3">해당없음</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>감자깡</td>
+        <td>1,300</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>자갈치</td>
+        <td>1,400</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>합계: </td>
+        <td colspan="4" style="text-align: left;">42,300원</td>
+      </tr>
+    </table>    
+  </div>
+  </body>
 </html>
